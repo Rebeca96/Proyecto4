@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+}
+ 
+#card{
+    width: 230px;
+    height: 350px;
+    padding: 50px;
+    padding-bottom: 30px;
+}
+
+.naranja{
+    margin-top: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: var(--Bright-orange);
+}
+
+.azul{
+    background-color: var(--Dark-cyan);
+}
+
+.verde{
+    background-color: var(--Very-dark-cyan);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 60px;
+}
+
+h1{
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: var(--Very-light-gray);
+    font-size: 2.7em;
+}
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--Transparent-white);
+    margin-bottom: 30px;
+}
+
+button{
+    height: 46px;
+    width: 150px;
+    border-radius: 25px;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.naranja button{
+    color: var(--Bright-orange);
+}
+
+.azul button{
+    color: var(--Dark-cyan);
+}
+
+.verde button{
+    color: var(--Very-dark-cyan);
+}
+
+button:hover{    
+    color: var(--Very-light-gray);
+    border: solid;
+    border-color: var(--Very-light-gray);
+    cursor: pointer;
+}
+
+.naranja button:hover{
+    background-color: var(--Bright-orange);
+
+}
+.azul button:hover{
+    background-color: var(--Dark-cyan);
+}
+
+.verde button:hover{
+    background-color: var(--Very-dark-cyan);
+}
+
+/*--------------------Desktop Design-----------------*/
+
+@media (min-width: 900px){
+    body{
+        display: flex;
+        flex-direction: row;
+        font-size: 15px;
+    }
+
+    #card{
+        margin-top: 100px;
+    }
+
+    .naranja{
+        margin-top: 0px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .verde{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-bottom: 0px;
+    }
+
+
+}

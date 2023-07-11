@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+}
+img{
+    width: 375px;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+}
+
+h1{font-size: .7em;
+    font-family: 'Montserrat', serif;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    color: hsl(228, 12%, 48%);
+}
+
+h2{
+    margin-top: 0;
+}
+.nombre{
+    font-family: 'Fraunces', serif;
+    font-size: 1.3em;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9em;
+    margin-top: 0;
+    font-weight: lighter;
+    color: hsl(228, 12%, 48%);
+
+}
+
+#carta{
+    width: 375px;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    background-color: hsl(0, 0%, 100%);
+    background-position: center center;
+    margin-top: 15px;  
+}
+
+.container{
+    max-width: 375px;
+    margin-left: 30px;
+}
+
+.valores{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    }
+
+.precio{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 1.3em;    
+}
+
+.newprecio h4{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+    text-decoration: line-through;
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: .9em;
+    color: hsl(228, 12%, 48%);
+}
+
+.btn button{
+    height: 50px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-width: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: hsl(158, 36%, 37%);
+    justify-content: center;
+    gap: 8px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    border-color: hsl(158, 36%, 37%);
+}
+
+.btn :hover{
+   background-color:hsl(212, 21%, 14%);
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root{
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+    /*---Gradientes---*/
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--White);
+}
+
+#carta{
+    background-color: var(--White);
+    width: 375px;
+    height: 697px;
+    box-shadow: 0 2em 1em var(--Dark-gray-blue);
+}
+
+.card{    
+    background: linear-gradient(
+        var(--Light-slate-blue),
+        var(--Light-royal-blue));
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+    padding-top: 15px;    
+    padding-bottom: 40px;
+}
+
+.result{
+    text-align: center;
+}
+
+h3{
+    font-size: 15px;
+    margin-top: 0px;    
+}
+
+h3, .result p{
+    color: var(--Light-lavender);
+}
+
+.circulo{
+    background: linear-gradient(
+        var(--Violet-blue),
+        var(--Persian-blue));
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: none;
+    margin: 20px auto;
+    margin-bottom: 5px;
+    padding: 19px;
+}
+.circulo p{
+    font-size: 15px;
+    color: var(--Light-slate-blue);
+}
+
+h1, h2{
+    color: var(--White);
+}
+
+h1, p{
+    margin: 0;
+}
+
+h1{
+    font-size: 49px;
+}
+
+h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.result p.ppal{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.result p{
+    font-size: 15px;
+}
+
+.detalles{
+    background-color: var(--White);
+    text-align: center;
+}
+
+.detalles p{
+    font-weight: 800;
+}
+
+.detalles p.sumario{
+    font-size: 20px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.reaction, .memory, .verbal, .visual{
+    width: 320px;
+    height: 50px;
+    margin: auto;
+    border-radius: 8px;   
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.reaction{
+    background-color: hsl(0, 100%, 67%, 8%);
+}
+
+.memory{
+    background-color: hsl(39, 100%, 56%, 8%);;
+}
+
+.verbal{
+    background-color: hsl(166, 100%, 37%, 8%);
+}
+
+.visual{
+    background-color: hsl(234, 85%, 45%, 8%);
+}
+
+span{
+    font-weight: 100;
+    color: var(--Dark-gray-blue);
+}
+
+.reaction p, .memory p, .verbal p, .visual p{
+    margin-top: 5px;
+}
+
+.text{
+    margin-top: 3px;
+    margin-left: 5px;
+    display: flex;
+    gap: 10px;
+}
+
+.text img{
+    width: 20px;
+    height: 20px;
+}
+
+button{
+    width: 320px;
+    height: 50px;
+    border-radius: 24px;
+    background-color: var(--Dark-gray-blue);
+    border: none;
+    color: var(--White);
+    font-family: 'Hanken Grotesk', sans-serif;
+    letter-spacing: .9px;
+    font-weight: bold;
+}
+
+button:hover{
+    background: linear-gradient(
+        var(--Light-slate-blue),
+        var(--Light-royal-blue));
+}
+
+/*--------------Desktop Design--------------*/
+
+@media (min-width:644px){
+    #carta{
+        background-color: var(--White);
+        width: 600px;
+        height: 400px;
+        box-shadow: 0em 2em 1em  var(--Dark-gray-blue);
+        margin-top: 100px;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        border-radius: 24px;
+    }
+
+    .card{
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 23px;
+    }
+
+    .circulo{
+        height: 150px;
+        width: 150px;
+        padding: 30px;
+    }
+
+    .detalles{
+        height: 100%;
+        width: 300px;
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 24px;
+    }
+
+    .reaction, .memory, .verbal, .visual{
+        width: 250px;
+    }
+
+    h1{
+        font-size: 60px;
+    }
+
+    h2{
+        margin-top: 20px;
+    }
+    
+    h3{
+        font-size: 20px;
+    }
+
+    .result p.ppal{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    button{
+        width: 250px;
+    }
+    
+}

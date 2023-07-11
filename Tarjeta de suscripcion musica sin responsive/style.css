@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;800&display=swap');
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--Pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.total{
+    background-color: white;    
+    height: 570px;
+    margin-top: 60px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.total, .imagen{
+    width: 360px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+h1, h2{
+    color: var(--Dark-blue);
+}
+
+h2, p{
+    font-size: 16px;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: 800;   
+    margin-top: 20px; 
+}
+
+p{
+    color: var(--Desaturated-blue);
+    margin: auto 45px;
+    margin-bottom: 15px;
+}
+
+.detalles{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    text-align: left;
+}
+
+.detalles img{
+    margin-left: 45px;
+    margin-top: 10px;
+}
+
+h2{
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+
+.text p{
+    margin-left: 0;
+}
+
+a{
+    margin-right: 30px;
+    color: var(--Bright-blue);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+a:hover{
+    color: hsl(245, 75%, 52%, 60%);
+    text-decoration: none;
+}
+
+.botones{
+    height: 150px;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button.n1, button.n2{
+    width: 300px;
+    height: 50px;
+    margin: auto 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button.n1{
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: var(--Pale-blue);
+    background-color: var(--Bright-blue);
+}
+
+button.n1:hover{
+    background-color: hsl(245, 75%, 52%, 60%);
+    color: var(--Very-pale-blue);
+
+}
+
+button.n2{
+    color: var(--Desaturated-blue);
+    background-color: var(--Very-pale-blue);
+}
+
+button.n2:hover{
+    color: var(--Dark-blue);
+}
